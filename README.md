@@ -13,5 +13,5 @@ mpicxx -o sequential Sequential.cpp util.cpp -fopenmp -O3
 ### Parallel Program
 ```bash
 mpicxx -o parallel Parallel.cpp util.cpp -fopenmp -O3
-mpirun -np 4 ./parallel <n_bodies> <time_steps> <secs_between_steps>
+mpirun -np <processes> ./parallel <n_bodies> <time_steps> <secs_between_steps>
 ```
